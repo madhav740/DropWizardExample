@@ -1,0 +1,5 @@
+com/madhav/dwstart/DWGettingStartedConfiguration.class
+com/madhav/dwstart/DWGettingStartedApplication.class
+com/madhav/dwstart/resources/DWGettingStartedResource.class
+com/madhav/dwstart/core/Saying.class
+com/madhav/dwstart/health/TemplateHealthCheck.class
