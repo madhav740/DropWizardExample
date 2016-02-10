@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: DWGettingStarted/target/DWGettingStarted-1.0-SNAPSHOT.jar
+    destination: /home/ubuntu
+  - source: DWGettingStarted/ConfigurationTemplate.yml
+    destination: /home/ubuntu/
+hooks:
+  BeforeInstall:
+    - location: stop_server.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: start_server.sh
+      timeout: 300
+      runas: root
